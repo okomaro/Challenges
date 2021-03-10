@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>DoooGS!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Dogs quiz</h1>
+        <p class="p-2 ">Question 3: Dogs of the Basenji race do not bark, instead they:</p>
+        <img src="images/3.jpg" alt="Nose Dog">
+        <div>
+            <button id="btn1" type="button" class="btn btn-light mt-3 mr-3" onclick="check_answer(this.id)">Fart.</button>
+            <button id="btn2" type="button" class="btn btn-light mt-3 mr-3" onclick="check_answer(this.id)">Jump.</button>
+            <button id="btn3" type="button" class="btn btn-light mt-3 mr-3" onclick="check_answer(this.id)">Sneeze.</button>
+            <button id="btn4" type="button" class="btn btn-light mt-3 mr-3" onclick="check_answer(this.id)"> Yodel.</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <script>
+        function check_answer(id) {
+            if (id == "btn4") {
+                location.href = "winner.html";
+            } else {
+                location.href = "looser.html";
+            }
+        };
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

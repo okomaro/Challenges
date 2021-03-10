@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <title>Quiz stats</title>
+    <script src="/myscript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Statistics</h1>
+        <p id="greetings"></p>
+        <p>Here are your results</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Quiz</th>
+                    <th scope="col">Attempts</th>
+                    <th scope="col">Won</th>
+                    <th scope="col">Lost</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Birds</th>
+                    <td id="try_birds">0</td>
+                    <td id="won_birds">0</td>
+                    <td id="loss_birds">0</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Dogs</th>
+                    <td id="try_dogs">0</td>
+                    <td id="won_dogs">0</td>
+                    <td id="loss_dogs">0</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary" onclick="startAgain()">Take another quiz</button>
+        <button type="button" class="btn btn-secondary" onclick="resetResults()">Reset results</button>
+        <button type="button" class="btn btn-secondary" onclick="logOut()">Log out</button>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <script>
+        document.body.onload = showResults(), callTheUser();
+
+        function showResults() {
+            document.getElementById('won_dogs').innerHTML = localStorage.getItem('wins_dogs');
+            document.getElementById('won_birds').innerHTML = localStorage.getItem('wins_birds');
+            document.getElementById('try_birds').innerHTML = localStorage.getItem('try_birds');
+            document.getElementById('try_dogs').innerHTML = localStorage.getItem('try_dogs');
+            document.getElementById('loss_dogs').innerHTML = localStorage.getItem('loss_dogs');
+            document.getElementById('loss_birds').innerHTML = localStorage.getItem('loss_birds');
+        }
+    </script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Session 1 challenges</title>
+</head>
+
+<body class="container">
+    <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#challenge-one"
+            aria-expanded="false" aria-controls="challenge-one">Buttons</button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#challenge-two"
+            aria-expanded="false" aria-controls="challenge-two">Points</button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#challenge-three"
+            aria-expanded="false" aria-controls="challenge-three">Multiple quizzes</button>
+    </p>
+
+    <div class="col" id="parent">
+        <div class="collapse multi-collapse" id="challenge-one" data-parent="#parent">
+            <div class="card card-body">
+                <h3>Buttons</h3>
+                <p>Find a way to use buttons instead of links (<code>&#x0003C;a&#x0003E;</code>) to 'begin' and 'try
+                    again'</p>
+                <p>Benefit: Adds some coolness</p>
+                <p>Difficulty: Easy</p>
+                <p>Tags: <code>&#x0003C;button&#x0003E;</code></p>
+                <p>Hints: <span style="color:grey; background-color:grey" onmouseout="this.style.color='grey'"
+                        onmouseover="this.style.color='white'">google
+                        "button as link html"</span></p>
+            </div>
+        </div>
+        <div class="collapse multi-collapse" id="challenge-two" data-parent="#parent">
+            <div class="card card-body">
+                <h3>Points</h3>
+                <p>Add a score that increases each time you answer correctly, and display that score on each page
+                    (including the win and lose pages)</p>
+                <p>Benefit: It almost looks dynamic! (What is dynamic? Topic of next week!)</p>
+                <p>Difficulty: Also easy, but it takes a little bit of time.</p>
+                <p>Tags: No new tags required.</p>
+                <p>Hints: <span style="color:grey; background-color:grey" onmouseout="this.style.color='grey'"
+                        onmouseover="this.style.color='white'">You will need to add more .html files."</span></p>
+            </div>
+        </div>
+        <div class="collapse multi-collapse" id="challenge-three" data-parent="#parent">
+            <div class="card card-body">
+                <h3>Multiple quizzes</h3>
+                <p>Add a new front page, and add the bird quiz as a clickable image.<br>add more quizzes next to the
+                    bird quiz if you can (dog quiz material on <a
+                        href="https://learnit.itu.dk/course/view.php?id=3019697#section-3">LearnIt</a>)</p>
+                <p>Benefit: Sweet vitory! Gonna taste like Awesomesauce</p>
+                <p>Difficulty: Medium</p>
+                <p>Tags: <code>&#x0003C;ul&#x0003E;</code> and <code>&#x0003C;li&#x0003E;</code> might come in handy</p>
+                <p>Hints: <span style="color:grey; background-color:grey" onmouseout="this.style.color='grey'"
+                        onmouseover="this.style.color='white'">You will need to add more .html files, change the current
+                        index.html, and add a new index.html for the front page. Might be a good idea to change the file
+                        structure as well."</span></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
